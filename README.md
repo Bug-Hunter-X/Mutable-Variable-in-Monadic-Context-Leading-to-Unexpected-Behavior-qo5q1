@@ -1,0 +1,2 @@
+# Haskell Bug: Mutable Variable in Monadic Context
+This repository demonstrates a common error in Haskell programming involving the use of mutable variables within a monadic context. The original code (`bug.hs`) attempts to modify a mutable variable (`taxRate`) using `modifyIORef` within a `do` block. This approach is non-idiomatic, can lead to unexpected behavior, and is not referentially transparent. The solution (`bugSolution.hs`) demonstrates a more idiomatic approach using pure functions and avoiding mutable state.
